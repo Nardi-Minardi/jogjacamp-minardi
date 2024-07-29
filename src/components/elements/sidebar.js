@@ -22,9 +22,13 @@ const Sidebar = ({ dataProvinsi }) => {
 
   const getDataKabupaten = async () => {
     const res = await axios.get(
-      `http://apikab.jcamp.pt/public/api/v1/reference/regencies_of/${provinsiId}`
-    );
-
+      `http://apikab.jcamp.pt/public/api/v1/reference/regencies_of/${provinsiId}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
     return res;
   };
 
@@ -44,8 +48,13 @@ const Sidebar = ({ dataProvinsi }) => {
 
   const getDataKecamatan = async () => {
     const res = await axios.get(
-      `http://apikab.jcamp.pt/public/api/v1/reference/districts_of/${kabupatenId}`
-    );
+      `http://apikab.jcamp.pt/public/api/v1/reference/districts_of/${kabupatenId}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
     return res;
   };
 
@@ -66,8 +75,13 @@ const Sidebar = ({ dataProvinsi }) => {
 
   const getDataDesa = async () => {
     const res = await axios.get(
-      `http://apikab.jcamp.pt/public/api/v1/reference/villages_of/${kecamatanId}`
-    );
+      `http://apikab.jcamp.pt/public/api/v1/reference/villages_of/${kecamatanId}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    });
     return res;
   };
 

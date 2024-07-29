@@ -10,7 +10,13 @@ import { dataCard2 } from '../../libs/data'
 const Index = () => {
 
   const getProvinsi = async () => {
-    const res = await axios.get('http://apikab.jcamp.pt/public/api/v1/reference/provinces')
+    const res = await axios.get('http://apikab.jcamp.pt/public/api/v1/reference/provinces', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Access-Control-Allow-Origin': '*'
+      }
+    })
     return res
   }
 
