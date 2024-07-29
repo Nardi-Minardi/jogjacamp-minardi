@@ -37,6 +37,3 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 ## Any additional notes or known issues.
 - Pada page test-select untuk mengatasi Jika provinsi sudah dipilih dan halaman di refresh, maka dropdown provinsi yang dipilih tadi tetap menampilkan pilihan data sebelumnya. saya menggunakan react router dom untuk menyimpan state pada url params, sehingga ketika halaman di refresh, state tidak hilang. namun jika mengganti halaman, state akan hilang.
 
-## The project is deployed on Vercel, and you can access it using the following link:
-[https://jogjacamp-minardi.vercel.app/](https://jogjacamp-minardi.vercel.app/)
-
