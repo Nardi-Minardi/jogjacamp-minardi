@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="flex h-screen flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center py-5">
+        <h5 className="text-2xl">Welcome to the My App</h5>
+        <p className="text-sm">This is a simple app for technical test Jogjacamp</p>
+      </div>
+      <ul className="flex flex-row space-x-8 list-disc">
+        <li>Test Layout
+          <a href="/test-layout" className="text-blue-500 text-xs ml-2">Click Here</a>
+        </li>
+        <li>Test Layout Form<a href="/test-layout-form" className="text-blue-500 text-xs ml-2">Click Here</a>
+        </li>
+        <li>Test Select<a href="/test-select" className="text-blue-500 text-xs ml-2">Click Here</a>
+        </li>
+      </ul>
+      {/* copyright */}
+      <div className="absolute bottom-0 w-full text-center py-5">
+        <p className="text-xs">© 2024 <a href="https://portofolio-minardi.vercel.app/" className="text-blue-500">Minardi</a></p>
+      </div>
     </div>
   );
 }
