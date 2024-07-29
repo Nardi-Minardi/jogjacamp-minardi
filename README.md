@@ -4,7 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Getting Started, Instructions to set up and run the project locally.
 
-first install the dependencies:
+first, clone the project:
+
+```bash
+git clone https://github.com/Nardi-Minardi/jogjacamp-minardi.git
+```
+
+then, navigate to the project directory:
+
+```bash
+
+and install the dependencies:
 
 ```bash
 npm install
